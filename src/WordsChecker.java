@@ -5,14 +5,12 @@ public class WordsChecker {
 
     private String someText;
 
-
     public WordsChecker (String someText) {
         this.someText = someText;
     }
 
     public boolean hasWord (String word) {
         Set<String> set = new HashSet<>();
-        //String[] txt = someText.split("\\P{IsAlphabetic}+");
         for (String txt : someText.split("\\P{IsAlphabetic}+")) {
             set.add(txt);
         }
