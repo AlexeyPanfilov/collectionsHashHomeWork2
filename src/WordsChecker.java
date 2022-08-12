@@ -11,7 +11,7 @@ public class WordsChecker {
 
     public boolean hasWord (String word) {
         Set<String> set = new HashSet<>();
-        for (String txt : someText.split("\\P{IsAlphabetic}+")) {
+        for (String txt : someText.split("\\P{IsAlphabetic}+")) { // метод создания массива отдельных слов из текста
             set.add(txt);
         }
         if (set.contains(word)) return true;
