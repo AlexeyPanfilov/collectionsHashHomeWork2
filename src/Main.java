@@ -10,6 +10,6 @@ public class Main {
                 "nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui " +
                 "officia deserunt mollit anim id est laborum.";
         WordsChecker checker = new WordsChecker(text);
-        System.out.println(checker.hasWord("amet"));
+        System.out.println(checker.hasWord("non"));
     }
 }
